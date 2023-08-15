@@ -1,0 +1,7 @@
+.popup__input_validated:valid {
+  border-bottom: calc(var(--input_error_brdwidth)*1px) var(--input_error_linetype);
+  border-color: var(--profiledit_line_color);
+}
+
+.popup__input_validated:invalid {
+}

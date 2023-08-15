@@ -1,0 +1,8 @@
+.header__signs {
+  display: inherit;
+  justify-content: flex-end;
+  gap: calc(var(--header_sign_gap)*1px);
+  font-size: calc(var(--default_text_fnsize_p)*1px);
+  line-height: calc(var(--default_text_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+}

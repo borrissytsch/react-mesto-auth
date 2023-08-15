@@ -1,0 +1,5 @@
+.header__logo {
+  max-width: calc(var(--logo_width)*1px);
+  height:calc(var(--logo_height)*1px);
+  aspect-ratio: var(--logo_aspect);
+}

@@ -1,0 +1,16 @@
+.table__trash {
+  position: absolute;
+  top: calc(var(--table_trash_top)*1px);
+  right: calc(var(--table_trash_right)*1px);
+  width: calc(var(--table_trash_width)*1px);
+  height: calc(var(--table_trash_height)*1px);
+  background-image: var(--table_trash_icon);
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center;
+  aspect-ratio: var(--table_trash_aspect);
+  border: none;
+  outline: none;
+  object-fit: contain;
+  cursor: pointer;
+  visibility: hidden;
+}

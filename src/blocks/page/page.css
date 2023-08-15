@@ -1,0 +1,14 @@
+.page {
+  margin: 0 auto;
+  padding: 0;
+  max-width: calc(var(--page_width)*1px);
+  color: var(--default_color);
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--default_back_color);
+}                                                                                                                                                                                                          /* outline: 3px darkred double; */
+
+@media screen and (max-width: 1279px) {
+  .page {
+    width: 100%;
+  }
+}

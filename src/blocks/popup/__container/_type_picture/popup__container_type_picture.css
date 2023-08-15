@@ -1,0 +1,5 @@
+@media screen and (max-width: 562px) {
+  .popup__container_type_picture {
+    max-width: 100%;
+  }
+}

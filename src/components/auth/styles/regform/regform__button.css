@@ -1,0 +1,7 @@
+.regform__button {
+  margin-top: calc(var(--regform_btn_top)*1px);
+  height: calc(var(--regform_btn_height)*1px);
+  font-size: calc(var(--default_text_fnsize_p)*1px);
+  line-height: calc(var(--default_text_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+}

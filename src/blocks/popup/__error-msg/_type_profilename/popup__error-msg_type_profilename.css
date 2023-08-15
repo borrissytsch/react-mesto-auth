@@ -1,0 +1,3 @@
+.popup__error-msg_type_profilename {
+  top: calc(var(--error_name_top)*1px);
+}

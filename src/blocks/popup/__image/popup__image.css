@@ -1,0 +1,5 @@
+.popup__image {
+  max-width: var(--picture_popup_maxwdth);
+  max-height: var(--picture_popup_maxhght);
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+.popup__save {
+  margin-top: calc(var(--profiledit_save_top)*1px);
+  margin-bottom: calc(var(--profiledit_save_bot)*1px);
+  margin-left: calc(var(--profiledit_save_alignleft)*1px);
+  padding: 0;
+  width: calc((var(--profiledit_save_width))*1px);
+  height: calc(var(--profiledit_save_height)*1px);
+  border: none;
+  background-color: rgba(0,0,0,1.0);
+  border-radius: calc(var(--cousteau_button_radius)*1px);
+  color: var(--default_color);
+  text-align: center;
+  font-size: calc(var(--default_text_fnsize_p)*1px);
+  line-height: calc(var(--default_text_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+  cursor: pointer;
+}
+
+.popup__save:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 562px) {
+  .popup__save {
+    margin-left: 0;   
+  } 
+}

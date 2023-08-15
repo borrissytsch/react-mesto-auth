@@ -1,0 +1,9 @@
+.table__like {
+  margin-right: calc(var(--table_caption_right)*1px);
+  max-width: calc(var(--table_like_width)*1px);
+  max-height: calc(var(--table_like_height)*1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

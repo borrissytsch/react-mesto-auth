@@ -1,0 +1,217 @@
+:root {
+  /* For local debugging add ../../ to all backimage urls (for black_heart_icon:  ../../../), these are paths 4 webpack */
+  --cousteau_back_image: url(./../images/cousteau/button_plus.png);
+  --cousteau_inner_box: url(./../images/cousteau/cousteau_inner_box.png);
+  --cousteau_avatar_edbox: url(./../images/cousteau/cousteau_avatar_edbox.png);
+  --table_trash_icon: url(./../images/table/trash_icon.svg);
+  --table_heart_icon: url(./../images/table/table_heart_icon.svg);
+  --table_heart_icon_black: url(./../images/table/table_heart_icon_black.png);
+  --table_grid_background: url(./../images/table/grid_background.png);
+  --profiledit_close_button: url(./../images/popup/close_icon.png);
+  /* ---------------------------- General config ---------------------------- */
+  --page_width: 1280;
+  --default_section_left: 200;
+  --default_color: #fff;
+  --default_back_color: #000;
+  /* ---------------------------- Fonts config ---------------------------- */
+  --default_head_fnsize_p: 42;
+  --default_head_lnhght_p: 48;
+  --default_head_fnwght: 500;
+  --default_capt_fnsize_p: 24;
+  --default_capt_lnhght_p: 29;
+  --default_capt_fnwght: 900;
+  --default_text_fnsize_p: 18;
+  --default_text_lnhght_p: 22;
+  --default_text_fnwght: 400;
+  /* ---------------------------- Header config ---------------------------- */
+  --header_top: 45;
+  --header_left: var(--default_section_left);
+  --logo_width: 142;
+  --logo_height: 33;
+  --logo_aspect: var(--logo_width)/var(--logo_height);
+  --header_sign_gap: 24;
+  --header_exit_color: #A9A9A9;
+  --line_gap: 37;
+  --line_border: 1;
+  --line_color: rgba(84,84,84,0.7);
+  /* ---------------------------- Content config ---------------------------- */
+  --content_top: 32;
+  --cousteau_left: 180;
+  --cousteau_right: var(--default_section_left);
+  --cousteau_img_width: 169;
+  --cousteau_img_height: 128;
+  --cousteau_avatar_size: 120;
+  --cousteau_aspect: 1/1;
+  --cousteau_radius: 60;
+  --cousteau_img_altop: calc(5 + (var(--cousteau_img_height) - var(--cousteau_avatar_size))/2);
+  --cousteau_img_aleft: -6;
+  --cousteau_title_len: 294;
+  --cousteau_subtitle_len: 336;
+  --cousteau_left_gap: 2;
+  --cousteau_right_gap: 19;
+  --cousteau_row_gap: 7;
+  --cousteau_box_side: 24;
+  --cousteau_stick_size: 10;
+  --cousteau_box_top: 35;
+  --cousteau_button_width: 150;
+  --cousteau_button_height: 50;
+  --cousteau_button_radius: 2;
+  --cousteau_plus_size: 22;
+  --cousteau_align_gap: 8;
+  --cousteau_btn_hoveropas: 0.6;
+  --profiledit_popup_width: 430;
+  --profiledit_popup_height: 330;
+  --profiledit_backcolor: var(--default_color);
+  --profiledit_close_side: 31;
+  --profiledit_close_aspect: 1/1;
+  --profiledit_close_top: 155;
+  --profiledit_close_gap: 8;
+  --profiledit_title_top: 35;
+  --profiledit_radius: 10;
+  --profiledit_items_left: 38;
+  --profiledit_items_top: 12;
+  --profiledit_input_top: 33;
+  --profiledit_input_width: 358;
+  --profiledit_input_height: 22;
+  --profiledit_line_color: rgba(0,0,0, 0.2);
+  --profiledit_input_fnsize_p: 14;
+  --profiledit_input_lnhght_p: 17;
+  --profiledit_save_width: 358;
+  --profiledit_save_height: 50;
+  --profiledit_save_top: 54;
+  --profiledit_save_alignleft: 2;
+  --profiledit_save_bot: 27;
+  --places_top: 50;
+  --table_left: var(--default_section_left);
+  --table_height: 361;
+  --table_img_size: 282;
+  --table_img_aspect: 1/1;
+  --table_colgap: 17;
+  --table_rowgap: 20;
+  --table_radius: 10;
+  --table_caption_left: 21;
+  --table_caption_right: 20;
+  --table_caption_fract: 85fr;
+  --table_icon_width: 22;
+  --table_icon_height: 19;
+  --table_icon_aspect: var(--table_icon_width)/var(--table_icon_height);
+  --table_liken_fnsize_p: 13;
+  --table_liken_lnhght_p: 16;
+  --table_like_width: var(--table_icon_width);
+  --table_like_height: calc(var(--table_icon_height) + 2 + var(--table_liken_lnhght_p));
+  --table_trash_top: 20;
+  --table_trash_right: 20;
+  --table_trash_width: 18;
+  --table_trash_height: 19;
+  --table_trash_aspect: var(--table_trash_width)/var(--table_trash_height);
+  --picture_popup_maxwdth: 75vw;
+  --picture_popup_maxhght: 75vh;
+  --picture_caption_top: 10;
+  --picture_text_fnsize_p: 12;
+  --picture_text_lnhght_p: 15;
+  /* ---------------------------- Footer config ---------------------------- */
+  --footer_top: 67;
+  --footer_bottom: 60;
+  --footer_left: var(--default_section_left);
+  --footer_color: #545454;
+  /* ---------------------------- Form's errors config ---------------------------- */
+  --input_error_fnsize_p: 12;
+  --input_error_lnhght_p: 15;
+  --input_error_brdwidth: 1;
+  --input_error_linetype: solid;
+  --input_error_color: red;
+  --error_msg_left: 0;
+  --error_name_top: 136;
+  --error_link_top: 194;
+  --input_valid_brdcolor: green;
+  /* ---------------------------- Components config -------------------------------- */
+  --regform_top: 60;
+  --regform_width: 358;
+  --regform_title_bot: 20;
+  --regform_input_top: 30;
+  --regform_fld_height: 27;
+  --regform_fld_border: 2;
+  --regform_fld_fnsize_p: 14;
+  --regform_fld_lnhght_p: 17;
+  --regform_brd_color: #ccc;
+  --regform_btn_top: 208;
+  --regform_btn_height: 50;
+}
+
+@media screen and (max-width: 968px) {
+  :root {
+    --cousteau_button_width: 282;
+    --cousteau_align_gap: 8;
+    --cousteau_align_left: 8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+   --cousteau_title_height: 39;
+   --cousteau_subtitle_height: 18;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  :root {
+    /* --profiledit_close_button: url(./../../../../images/popup/close_icon_320.png); */
+    --profiledit_close_button: url(./../images/popup/close_Icon_320.png);
+    --default_head_fnsize_p: 27;
+    --default_head_lnhght_p: 33;
+    --default_text_fnsize_p: 14;
+    --default_text_lnhght_p: 17;
+    --header_top: 27;
+    --logo_width: 104;
+    --logo_height: 24;
+    --line_gap: 29;
+    --content_top: 38;
+    --cousteau_box_side: 18;
+    --cousteau_stick_size: 8;
+    --cousteau_plus_size: 16;
+    --profiledit_popup_width: 282;
+    --profiledit_popup_height: 322;
+    --profiledit_items_left: 22;
+    --profiledit_title_top: 27;
+    --profiledit_items_top: 48;
+    --profiledit_input_top: 20;
+    --profiledit_input_width: 238;
+    --profiledit_input_height: 34;
+    --profiledit_close_side: 20;
+    --profiledit_close_gap: 16;
+    --profiledit_save_top: 40;
+    --profiledit_save_bot: 25;
+    --profiledit_save_width: 238;
+    --profiledit_save_height: 46;
+    --places_top: 36;
+    --footer_top: 48;
+    --footer_bottom: 36;
+    --input_error_fnsize_p: 11;
+    --input_error_lnhght_p: 14;
+    --error_name_top: 154;
+    --error_link_top: 212;
+  
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  :root {
+    --page_width: 320;
+    --default_section_left: 19;
+    --header_left: 27;
+    --line_width: 320;
+    --cousteau_left: 78;
+    --cousteau_img_altop: 0;
+    --cousteau_img_align: -35;
+    --cousteau_title_len: 189;
+    --cousteau_title_altop: 9;
+    --cousteau_title_aleft: -34;
+    --cousteau_box_top: 10;
+    --cousteau_left_gap: 6;
+    --cousteau_btn_aleft: -60;
+    --cousteau_align_gap: -1;
+    --cousteau_subtitle_len: 282;
+    --cousteau_row_gap: 14;
+    --profiledit_close_top: 87;
+  }
+}

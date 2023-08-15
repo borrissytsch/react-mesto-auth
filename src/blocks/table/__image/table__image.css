@@ -1,0 +1,9 @@
+.table__image {
+  width: calc(var(--table_img_size)*1px);
+  max-height: calc(var(--table_img_size)*1px);
+  aspect-ratio: var(--table_img_aspect);
+  object-fit: cover;
+  border-top-left-radius: calc(var(--table_radius)*1px);
+  border-top-right-radius: calc(var(--table_radius)*1px);
+  cursor: pointer;
+}

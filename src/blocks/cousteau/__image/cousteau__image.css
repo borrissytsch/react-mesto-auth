@@ -1,0 +1,24 @@
+.cousteau__image {
+  margin-top: calc(var(--cousteau_img_altop)*1px);
+  margin-left: calc((var(--cousteau_img_aleft) + (var(--cousteau_img_width)  - var(--cousteau_avatar_size))/2)*1px);
+  margin-right: calc((var(--cousteau_img_width) - var(--cousteau_avatar_size))/2*1px);
+  width: calc(var(--cousteau_avatar_size)*1px);
+  height: calc(var(--cousteau_avatar_size)*1px);
+  border-radius: calc(var(--cousteau_radius)*1px);
+  aspect-ratio: var(--cousteau_aspect);
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cousteau__image {
+    margin-left: calc((var(--default_section_left) - var(--cousteau_left))*1px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cousteau__image {
+    margin-left: calc(var(--cousteau_img_align)*1px);
+  }
+}

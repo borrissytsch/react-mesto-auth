@@ -1,0 +1,23 @@
+.popup__close {
+  width: calc(var(--profiledit_close_side)*1px);
+  height: calc(var(--profiledit_close_side)*1px);
+  position: absolute;
+  left: calc(100% + var(--profiledit_close_gap)*1px);
+  bottom: calc(100% + var(--profiledit_close_gap)*1px);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: var(--profiledit_close_button);
+  aspect-ratio: var(--profiledit_close_aspect);
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: var(--cousteau_btn_hoveropas);
+}
+
+@media screen and (max-width: 562px) {
+  .popup__close {
+    left: calc(100% - var(--profiledit_close_side)*1px);
+  }
+}

@@ -1,0 +1,9 @@
+.table__title {
+  margin-left: calc(var(--table_caption_left)*1px);
+  font-size: calc(var(--default_capt_fnsize_p)*1px);
+  font-weight: var(--default_capt_fnwght);
+  line-height: calc(var(--default_capt_lnhght_p)*1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

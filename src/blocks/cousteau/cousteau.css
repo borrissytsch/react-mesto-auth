@@ -1,0 +1,31 @@
+.cousteau {
+  margin-left: calc((var(--cousteau_left))*1px);
+  margin-right: calc(var(--cousteau_right)*1px);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 1279px) {
+  .cousteau {
+    margin-left: calc(var(--cousteau_left)/var(--page_width)*100vw);
+    margin-right: calc(var(--cousteau_right)/var(--page_width)*100vw);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .cousteau {
+    flex-direction: column;
+    gap: calc(var(--cousteau_row_gap)*1px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cousteau {
+    margin-left: calc(var(--cousteau_left)*1px);
+    margin-right: calc(var(--cousteau_right)*1px);
+  }
+}

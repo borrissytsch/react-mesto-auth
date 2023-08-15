@@ -1,0 +1,28 @@
+.cousteau__item {
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+    "photo title box"
+    "photo subtitle subtitle";
+  grid-template-columns: calc(var(--cousteau_img_width)*1px) auto auto;
+  grid-template-rows: auto;
+  justify-content: left;
+  align-items: end;
+  min-height: calc(var(--cousteau_img_height)*1px);
+  column-gap: calc(var(--cousteau_left_gap)*1px);
+  row-gap: calc(var(--cousteau_row_gap)*1px);
+}
+
+@media screen and (max-width: 768px) {
+  .cousteau__item {
+    min-height: calc((var(--cousteau_img_height) + var(--cousteau_title_height) + var(--cousteau_subtitle_height) + var(--cousteau_row_gap)*3)*1px);
+    grid-template-areas: 
+    "photo photo"
+    "title box"
+    "subtitle subtitle";
+  grid-template-columns: auto;
+  grid-template-rows: calc(var(--cousteau_img_height)*1px) calc(var(--cousteau_title_height)*1px) calc(var(--cousteau_subtitle_height)*1px);
+  align-items: center;
+  justify-content: center;
+  }
+}

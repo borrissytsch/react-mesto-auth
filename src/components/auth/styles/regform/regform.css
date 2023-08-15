@@ -1,0 +1,9 @@
+.regform {
+  margin: 0 auto;
+  padding-top: calc(var(--regform_top)*1px);
+  width: calc(var(--regform_width)*1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--default_back_color);
+}

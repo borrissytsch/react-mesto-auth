@@ -1,0 +1,3 @@
+.popup__error-msg_type_profilabout {
+  top: calc(var(--error_link_top)*1px);
+}

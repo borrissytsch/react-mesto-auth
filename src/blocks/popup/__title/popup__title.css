@@ -1,0 +1,19 @@
+.popup__title {
+  margin: 0;
+  margin-top: calc(var(--profiledit_title_top)*1px);
+  margin-left: calc(var(--profiledit_items_left)*1px);
+  align-self: flex-start;
+  text-align: left;
+  font-size: calc(var(--default_capt_fnsize_p)*1px);
+  line-height: calc(var(--default_capt_lnhght_p)*1px);
+  font-weight: var(--default_capt_fnwght);
+  color: var(--default_back_color);
+  background-color: var(--profiledit_backcolor);
+}
+
+@media screen and (max-width: 562px) {
+  .popup__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

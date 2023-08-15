@@ -1,0 +1,8 @@
+.popup__caption {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + var(--picture_caption_top)*1px);
+  font-size: calc(var(--picture_text_fnsize_p)*1px);
+  line-height: calc(var(--picture_text_lnhght_p)*1px);
+}

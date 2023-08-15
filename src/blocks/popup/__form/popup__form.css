@@ -1,0 +1,18 @@
+.popup__form {
+  width: 100%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: flex-start;
+  align-items: inherit;
+  text-align: center;
+  background-color: var(--profiledit_backcolor);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border-radius: calc(var(--profiledit_radius)*1px);
+  position: relative;
+}
+
+@media screen and (max-width: 562px) {
+  .profiledit__form {
+    margin-left: calc(var(--profiledit_items_left)*1px);
+  }
+}

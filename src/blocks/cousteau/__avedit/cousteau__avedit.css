@@ -1,0 +1,19 @@
+.cousteau__avedit {
+  position: absolute;
+  top: calc(var(--cousteau_img_altop)*1px);
+  left: calc(((var(--cousteau_img_aleft) + var(--cousteau_img_width) - var(--cousteau_avatar_size))/2)*1px);
+  width: calc(var(--cousteau_avatar_size)*1px);
+  height: calc(var(--cousteau_avatar_size)*1px);
+  border-radius: calc(var(--cousteau_radius)*1px);
+  background-image: var(--cousteau_avatar_edbox);
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.cousteau__avedit:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,14 @@
+.table__icon {
+  max-width: calc(var(--table_icon_width)*1px);
+  height: calc(var(--table_icon_height)*1px);
+  background-image: var(--table_heart_icon);
+  background-position: center;
+  aspect-ratio: var(--table_icon_aspect);
+  border: none;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.table__icon:hover {
+  opacity: 0.5;
+}

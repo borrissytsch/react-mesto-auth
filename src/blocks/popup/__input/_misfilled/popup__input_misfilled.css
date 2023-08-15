@@ -1,0 +1,3 @@
+.popup__input_misfilled {
+  border-color: var(--input_error_color);
+}

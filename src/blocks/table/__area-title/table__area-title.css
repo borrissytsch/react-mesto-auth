@@ -1,0 +1,4 @@
+.table__area-title {
+  grid-area: caption;
+  color: var(--default_back_color);
+}

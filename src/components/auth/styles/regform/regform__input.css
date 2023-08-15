@@ -1,0 +1,14 @@
+.regform__input {
+  margin-top: calc(var(--regform_input_top)*1px);
+  width: calc(var(--regform_width)*1px);
+  height: calc(var(--regform_fld_height)*1px);
+  font-size: calc(var(--regform_fld_fnsize_p)*1px);
+  line-height: calc(var(--regform_fld_lnhght_p)*1px);
+  font-weight: var(--default_head_fnwght);
+  border: none;
+  outline: none;
+  border-bottom: calc(var(--regform_fld_border)*1px) solid;
+  border-color: var(--regform_brd_color);
+  color: inherit;
+  background-color: inherit;
+} 

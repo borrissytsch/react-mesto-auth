@@ -1,0 +1,29 @@
+.cousteau__title {
+  margin: 0;                                                                                                              /* здесь по теме */
+  line-height: calc(var(--default_head_lnhght_p)*1px);
+  font-size: calc(var(--default_head_fnsize_p)*1px);
+  font-weight: var(--default_head_fnwght);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: calc(var(--cousteau_title_len)*1px);
+}                                                                                                                                                                                         /* border-color:blueviolet; border-style: dashed; */
+
+@media screen and (max-width: 768px) {
+  .cousteau__title {
+    margin-left: calc((var(--default_section_left) - var(--cousteau_left))*2px);
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .cousteau__title {
+    margin-top: calc(var(--cousteau_align_gap)*2px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cousteau__title {
+    margin-top: calc(var(--cousteau_title_altop)*1px);
+    margin-left: calc(var(--cousteau_title_aleft)*1px);
+  }
+}

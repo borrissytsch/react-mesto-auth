@@ -1,0 +1,21 @@
+.footer {
+  margin-top: calc((var(--footer_top))*1px);
+  margin-left: calc(var(--footer_left)*1px);
+  margin-bottom: calc(var(--footer_bottom)*1px);
+  font-size: calc(var(--default_text_fnsize_p)*1px);
+  font-weight: var(--default_text_fnwght);
+  line-height: calc(var(--default_text_lnhght_p)*1px);
+  color: var(--footer_color);
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    margin-left: calc(var(--footer_left)/var(--page_width)*100vw);
+  }  
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    margin-left: calc(var(--footer_left)*1px);
+  }
+}

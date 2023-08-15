@@ -1,0 +1,32 @@
+.cousteau__button {
+  margin-top: calc(var(--cousteau_align_gap)*1px);
+  width: calc(var(--cousteau_button_width)*1px);
+  height: calc(var(--cousteau_button_height)*1px);
+  background-image: var(--cousteau_back_image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(var(--cousteau_plus_size)*1px) calc(var(--cousteau_plus_size)*1px);
+  border: 2px solid;
+  padding: 0;
+  border-color: var(--default_color);
+  border-radius: calc(var(--cousteau_button_radius)*1px);
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.cousteau__button:hover {
+  opacity: var(--cousteau_btn_hoveropas);
+}
+
+@media screen and (max-width: 844px) {
+  .cousteau__button {
+    margin-top: calc(var(--cousteau_align_gap)*1px);
+    margin-left: calc((var(--default_section_left) - var(--cousteau_left) + var(--cousteau_align_left))*1px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cousteau__button {
+    margin-left: calc(var(--cousteau_btn_aleft)*1px);
+  }
+}

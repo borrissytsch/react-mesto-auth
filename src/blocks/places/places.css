@@ -1,0 +1,19 @@
+.places {
+  margin-top: calc(var(--places_top)*1px);
+  margin-left: calc(var(--table_left)/2*1px);
+  margin-right: calc(var(--table_left)/2*1px);
+}
+
+@media screen and  (max-width: 1279px) {
+  .places {
+    margin-left: calc(var(--table_left)/var(--page_width)*100vw/2);
+    margin-right: calc(var(--table_left)/var(--page_width)*100vw/2);
+  } 
+}
+
+@media screen and  (max-width: 320px) {
+  .places {
+    margin-left: calc(var(--table_left)/2*1px);
+    margin-right: calc(var(--table_left)/2*1px);
+  } 
+}

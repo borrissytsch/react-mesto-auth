@@ -1,0 +1,16 @@
+.table__cell {
+  margin: 0;
+  max-width: calc(var(--table_img_size)*1px);
+  max-height: calc(var(--table_height)*1px);
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+    "image image"
+    "caption like";
+  grid-template-columns: var(--table_caption_fract) auto;
+  grid-template-rows: calc(var(--table_img_size)*1px) auto;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: calc(var(--table_radius)*1px);
+  background-image: var(--table_grid_background);
+}

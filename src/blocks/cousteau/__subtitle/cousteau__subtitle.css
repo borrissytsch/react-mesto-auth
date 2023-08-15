@@ -1,0 +1,25 @@
+.cousteau__subtitle {
+  margin: 0;
+  line-height: calc(var(--default_text_lnhght_p)*1px);
+  font-size: calc(var(--default_text_fnsize_p)*1px);
+  font-weight: var(--default_text_fnwght);
+  align-self: self-start;
+  max-width: calc(var(--cousteau_subtitle_len)*1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}                                                                                                                                                                                      /* border-color:blueviolet; border-style: dashed; */
+
+@media screen and (max-width: 768px) {
+  .cousteau__subtitle {
+    margin-left: calc((var(--default_section_left) - var(--cousteau_left))*1px);
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cousteau__subtitle {
+    margin-top: -6px;
+    justify-self: center;
+  }
+}

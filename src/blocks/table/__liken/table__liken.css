@@ -1,0 +1,9 @@
+.table__liken {
+  margin: 0;
+  font-size: calc(var(--table_liken_fnsize_p)*1px);
+  line-height: calc(var(--table_liken_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+  color: var(--default_back_color);
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
