@@ -14,10 +14,10 @@ export default function Routh() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={loggedIn ? <Navigate to={app} replace /> : <Navigate to={signin} replace />} />
-        <Route path="/*" element={!loggedIn && <Navigate to={signin} replace />} />
         <Route path={`/${app}`} element={<ProtectedRoute element={App} protectFlag={loggedIn} />} />
         <Route path={`/${signin}`} element={<Login />} />
         <Route path={`/${signup}`} element={<Register />} />
+        <Route path="/*" element={!loggedIn && <Navigate to={signin} replace />} />
       </Routes>
     </BrowserRouter>
   );
