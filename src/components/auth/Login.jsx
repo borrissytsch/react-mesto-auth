@@ -15,7 +15,8 @@ export function Login () {
   );
 
   function handleRegForm (evt, {mail: logMail, pass: logPass}) {
-    alert(`Logs form ${srvAuthData.signin}: ${logMail = logMail ? logMail : userAuthData.signinMail} & ${logPass = logPass ? logPass :  userAuthData.signinPsw}`)
+    evt.preventDefault();
+    //alert(`Logs form ${srvAuthData.signin}: ${logMail = logMail ? logMail : userAuthData.signinMail} & ${logPass = logPass ? logPass :  userAuthData.signinPsw}`)
     mestAuth.authorize(logMail, logPass, srvAuthData.signin).then(result => {alert(`Login res: ${Object.keys(result).join('/')} entries: ${Object.entries(result).join(';')}`);
     }
     ).catch(err => {alert(`Login err: ${err}`)})

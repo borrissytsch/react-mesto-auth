@@ -11,7 +11,7 @@ export default class Auth {
 
   authorize (email = userAuthData.signupMail, password = userAuthData.signupPsw
     , dir = this.#srvSigninDir) {
-    alert(`fetch data: ${password} / ${email} / ${dir} + ${this.#srvAuth(dir)}`);
+    //alert(`fetch data: ${password} / ${email} / ${dir} + ${this.#srvAuth(dir)}`);
     return fetch(this.#srvAuth(dir), {
       method: 'POST',
       headers: {
@@ -19,7 +19,7 @@ export default class Auth {
       },
       body: JSON.stringify({password, email})
     }).then((result) => {
-      alert(`1st res ${result.status} : ${result.ok} : ${result.token}`)
+      //alert(`1st res ${result.status} : ${result.ok} : ${result.token}`)
       if (result.status === 200){
         return result.json();
       }

@@ -19,7 +19,7 @@ export function Register () {
 
   function handleRegForm (evt, {mail: regMail, pass: regPass}) {
     evt.preventDefault();
-    alert(`Regs form ${srvAuthData.signup}: ${regMail = regMail ? regMail : userAuthData.signupMail} & ${regPass = regPass ? regPass :  userAuthData.signupPsw}`);
+    //alert(`Regs form ${srvAuthData.signup}: ${regMail = regMail ? regMail : userAuthData.signupMail} & ${regPass = regPass ? regPass :  userAuthData.signupPsw}`);
     mestAuth.authorize(regMail, regPass, srvAuthData.signup).then(result => {alert(`Reg res ${result}: ${result.data} is: ${result.data._id} ${result.data.email} `)
   }).catch(err => alert(`Err: ${err}`))
   }
