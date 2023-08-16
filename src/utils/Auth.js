@@ -6,7 +6,7 @@ export default class Auth {
     this.#srvAuth = (dir) => auth (dir);
     this.#srvSigninDir = signinDir; this.#srvSignupDir = signupDir;
     this.#userDir = userDir;
-    alert(`constructor signin: ${this.#srvSigninDir} & up: ${this.#srvSignupDir} / ${userAuthData.signinMail} ${userAuthData.signinPsw}`)
+    // alert(`constructor signin: ${this.#srvSigninDir} & up: ${this.#srvSignupDir} / ${userAuthData.signinMail} ${userAuthData.signinPsw}`)
   }
 
   authorize (email = userAuthData.signupMail, password = userAuthData.signupPsw
