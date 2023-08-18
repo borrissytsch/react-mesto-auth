@@ -26,4 +26,4 @@
 
 ---
 
-[Проект опубликован в текущей, промежуточной версии, на GitHub Pages](https://borrissytsch.github.io/mesto-react/ "Место на React'e")
+[Проект опубликован в текущей, промежуточной версии, на GitHub Pages](https://borrissytsch.github.io/react-mesto-auth/ "Место на React'e")
