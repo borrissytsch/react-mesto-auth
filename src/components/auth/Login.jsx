@@ -42,7 +42,7 @@ export function Login ({loggedIn, startApp}) {
       startApp(result);
       navigate(`/${app}`)
     })
-    ).catch(err => {setToolTipOpen(true); console.log(`Login err: ${err}`); alert(`Login err: ${err}`)
+    ).catch(err => {setToolTipOpen(true); console.log(`Login err: ${err}`); //alert(`Login err: ${err}`)
   }); }
 
   function closeToolTip(evt, forceClose_flag = false) {
