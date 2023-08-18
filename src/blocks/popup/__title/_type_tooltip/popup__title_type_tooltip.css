@@ -1,0 +1,5 @@
+.popup__title_type_tooltip {
+  margin-top: calc(var(--tooltip_title_top)*1px);
+  margin-right: calc(var(--profiledit_items_left)*1px);
+  text-align: inherit;
+}

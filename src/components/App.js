@@ -1,5 +1,5 @@
 // import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
@@ -10,12 +10,14 @@ import AddPlacePopup from './AddPlacePopup.jsx';
 import ImagePopup from './ImagePopup.js';
 import {mestApi} from '../utils/Api.js';
 import {CurrentUserContext} from '../contexts/CurrentUserContext.js';
+import {LoggedInContext} from '../contexts/LoggedInContext.js';
 import {avatarProp, profileProp, cardProp, confirmProp, popupActiveClass
   , captionProfileButton, captionCardButton, msgSubmitButtonWait, captionConfirmButton, signPageCaptions, authRoutes
   , errMsg4AvatarForm, errMsg4ProfileForm, errMsg4AddCardForm, errMsg4GetCardsInfo
   , errMsg4CardLikeAdd, errMsg4CardLikeDel
 } from '../utils/constants.js';
-function App() {
+function App({startApp}) {
+  const loggedMail = useContext(LoggedInContext);
   const [currentUser, setCurrentUser] = useState({name: "Жак-Ив Кусто"
     , about: "Исследователь океана"
     , avatar: "https://pictures.s3.yandex.net/frontend-developer/common/ava.jpg"
@@ -44,8 +46,8 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <Header routeLink={`/${signin}`} signCaption={outCaption} loggedIn={true}>
-        <span>email@mail.com</span>
+      <Header routeLink={`/${signin}`} signCaption={outCaption} startApp={startApp}>
+        <span>{loggedMail}</span>
       </Header>
       <Main clickHandlers={clickHandlers} formName={formName} onClose={closeAllPopups} cards={cards}
         onCardLike={handleCardLike} onCardDelete={handleCardDelete}
@@ -140,7 +142,6 @@ function App() {
   }
 
   function closeAllPopups(evt, forceClose_flag = false) {
-    //alert(`Close all popups ${evt.target === evt.currentTarget}: ${evt.target} ${evt.currentTarget} ${evt.key}`);
     if ((evt.target === evt.currentTarget) || evt.key === "Escape" || forceClose_flag) Object.keys(
       clickHandlers).forEach(handler => clickHandlers[handler](evt, false, true)
     );

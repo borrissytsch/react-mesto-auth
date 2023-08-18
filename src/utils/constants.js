@@ -35,7 +35,8 @@
 export const authRoutes = {signin: "sign-in", signup: "sign-up", app: "app"};
 export const authFormIds = {signin: "inform", signup: "regform"};
 export const signPageCaptions = {inTitle: "Вход", regTitle: "Регистрация", btnEnterCaption: "Войти"
-  , btnRegCaption: "Зарегистрироваться", outCaption: "Выйти"
+  , btnRegCaption: "Зарегистрироваться", outCaption: "Выйти", tooltipErrCaption: "Что-то пошло не так! Попробуйте ещё раз."
+  , tooltipErrMsg: "Вы не должны были увидеть этого сообщения. Потеря управления в приложении"
 };
 
 /* Servers' data config */
@@ -45,8 +46,8 @@ export const srvAuthData = {auth: (dir) =>`https://auth.nomoreparties.co/${dir}`
 export const srvLoginData = {login: (dir) =>`https://mesto.nomoreparties.co/v1/cohort-69/${dir}`, token: '2820c2c8-dbab-4884-b269-611968f0327e'
   , userDir: 'users/me'
 };
-export const userAuthData = {signupPsw: 'Dimon-123456/D1', signupMail: 'borrissytsch@yandex.ru', signinPsw: 'Dimon-123456/D1'
-  , signinMail: 'borrissytsch@yandex.ru', userDir: 'users/me'
+export const userAuthData = {signupPsw: 'somepassword', signupMail: 'email@yandex.ru', signinPsw: 'dsfsdfsdfsdf'
+  , signinMail: 'email@email.ru', userDir: 'users/me'
 };
 
 /* React config vars */

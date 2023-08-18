@@ -1,0 +1,5 @@
+.popup__form_type_tooltip {
+  height: calc(var(--profiledit_popup_height)*1px);
+  background-repeat: no-repeat;
+  background-position: top calc(var(--tooltip_image_top)*1px) center;
+}

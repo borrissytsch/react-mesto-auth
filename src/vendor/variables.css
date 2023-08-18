@@ -8,6 +8,8 @@
   --table_heart_icon_black: url(./../images/table/table_heart_icon_black.png);
   --table_grid_background: url(./../images/table/grid_background.png);
   --profiledit_close_button: url(./../images/popup/close_icon.png);
+  --tooltip_image_ok: url(./../images/components/union_ok.png);
+  --tooltip_image_err: url(./../images/components/union_err.png);
   /* ---------------------------- General config ---------------------------- */
   --page_width: 1280;
   --default_section_left: 200;
@@ -136,6 +138,8 @@
   --regform_brd_color: #ccc;
   --regform_btn_top: 208;
   --regform_btn_height: 50;
+  --tooltip_image_top: 60;
+  --tooltip_title_top: 212;
 }
 
 @media screen and (max-width: 968px) {
