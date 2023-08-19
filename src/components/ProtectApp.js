@@ -16,7 +16,8 @@ import {avatarProp, profileProp, cardProp, confirmProp, popupActiveClass
   , errMsg4AvatarForm, errMsg4ProfileForm, errMsg4AddCardForm, errMsg4GetCardsInfo
   , errMsg4CardLikeAdd, errMsg4CardLikeDel
 } from '../utils/constants.js';
-function App({startApp}) {
+
+export default function ProtectApp({startApp}) {
   const loggedMail = useContext(LoggedInContext);
   const [currentUser, setCurrentUser] = useState({name: "Жак-Ив Кусто"
     , about: "Исследователь океана"
@@ -147,5 +148,3 @@ function App({startApp}) {
     );
   }
 }
-
-export default App;

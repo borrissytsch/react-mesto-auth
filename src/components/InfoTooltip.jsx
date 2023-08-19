@@ -1,5 +1,5 @@
 //import React from 'react';
-import {popupActiveClass} from '../../utils/constants.js'
+import {popupActiveClass} from '../utils/constants';
 export default function InfoTooltip({title, isOpen, isOk, onClose, onEscPress, ...frmFields}) {
   return (
     <div className={`popup popup_type_form ${isOpen ? popupActiveClass : ''}`} onKeyDown={onEscPress} onClick={onClose}>

@@ -36,7 +36,7 @@ export const authRoutes = {signin: "sign-in", signup: "sign-up", app: "app"};
 export const authFormIds = {signin: "inform", signup: "regform"};
 export const signPageCaptions = {inTitle: "Вход", regTitle: "Регистрация", btnEnterCaption: "Войти"
   , btnRegCaption: "Зарегистрироваться", outCaption: "Выйти", tooltipErrCaption: "Что-то пошло не так! Попробуйте ещё раз."
-  , tooltipErrMsg: "Вы не должны были увидеть этого сообщения. Потеря управления в приложении"
+  , tooltipOkMsg: "Вы успешно зарегистрировались"
 };
 
 /* Servers' data config */
