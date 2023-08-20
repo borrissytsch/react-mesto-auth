@@ -8,8 +8,8 @@
   --table_heart_icon_black: url(./../images/table/table_heart_icon_black.png);
   --table_grid_background: url(./../images/table/grid_background.png);
   --profiledit_close_button: url(./../images/popup/close_icon.png);
-  --tooltip_image_ok: url(./../images/components/union_ok.png);
-  --tooltip_image_err: url(./../images/components/union_err.png);
+  --tooltip_image_ok: url(./../images/components/Union_OK.png);
+  --tooltip_image_err: url(./../images/components/Union_ERR.png);
   /* ---------------------------- General config ---------------------------- */
   --page_width: 1280;
   --default_section_left: 200;
